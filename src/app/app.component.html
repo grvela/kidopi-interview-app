@@ -1,0 +1,13 @@
+<div class="app-container">
+  <header>
+    <h1>SPA Header</h1>
+  </header>
+  <main>
+    <app-select (countryChange)="onCountryChange($event)"></app-select>
+    <app-covid-data [country]="country"></app-covid-data>
+  </main>  
+  <footer>
+    <p>&copy; 2025 - My SPA Footer</p>
+  </footer>
+</div>
+<router-outlet />

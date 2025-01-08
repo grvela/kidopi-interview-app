@@ -1,0 +1,8 @@
+<p-select 
+  [options]="countries" 
+  [(ngModel)]="selectedCountry"
+  (onChange)="onCountryChange()"
+  optionLabel="name" 
+  placeholder="Select a Country" 
+  class="w-full md:w-56" 
+/>
