@@ -3,6 +3,6 @@
   [(ngModel)]="selectedCountry"
   (onChange)="onCountryChange()"
   optionLabel="name" 
-  placeholder="Select a Country" 
+  placeholder={{selectedCountry.name}} 
   class="w-full md:w-56" 
 />

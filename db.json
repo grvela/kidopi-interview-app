@@ -1,5 +1,5 @@
 {
-    "countries": [
+    "api/covid/countries": [
         { "id": 0, "name": "Afghanistan" },
         { "id": 1, "name": "Albania" },
         { "id": 2, "name": "Algeria" },
@@ -112,7 +112,7 @@
         { "id": 109, "name": "Zambia" },
         { "id": 110, "name": "Zimbabwe" }
     ],    
-    "covid": [
+    "api/covid": [
         { "id": 8, "country": "Afghanistan", "state": "", "confirmed_cases":  195631, "confirmed_deaths": 7787},
         { "id": 0, "country": "Australia", "state": "Australian Capital Territory", "confirmed_cases": 203680, "confirmed_deaths": 125 },
         { "id": 1, "country": "Australia", "state": "New South Wales", "confirmed_cases": 3463759, "confirmed_deaths": 5046 },

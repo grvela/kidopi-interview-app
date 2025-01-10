@@ -8,15 +8,15 @@ import { CountryDTO, CovidInfoDTO } from '../interfaces/covid-api.dto';
 })
 export class CovidApiService {
   
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'https://rodrigovela.dev/api';
 
   constructor(private http: HttpClient) { }
 
   getAllCountries() {
-    return this.http.get<CountryDTO[]>(`${this.baseUrl}/countries`);
+    return this.http.get<CountryDTO[]>(`${this.baseUrl}/covid/countries`);
   }
 
   getInfoByCountry(country: string) {
-    return this.http.get<CovidInfoDTO[]>(`${this.baseUrl}/covid?country=${country}`);
+    return this.http.get<CovidInfoDTO[]>(`${this.baseUrl}/covid/country/${country}`);
   }
 }

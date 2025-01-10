@@ -1,1 +1,21 @@
-<p>{{country()}}</p>
+<div class="container">
+    <div class="cards-container">
+        @for (item of data; track $index) {
+            <div class="card-item">
+                    <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+                        <ng-template #title>{{item.province}}</ng-template>
+                        <div class="card-content">
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-600">{{item.confirmed}}</p>
+                                Confirmed cases
+                            </div>
+                            <div>
+                                <p class="text-3xl font-semibold text-slate-600">{{item.deaths}}</p>
+                                Confirmed deaths
+                            </div>
+                        </div>
+                    </p-card>
+            </div>
+        }
+    </div>
+</div>

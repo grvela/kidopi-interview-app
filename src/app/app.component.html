@@ -1,13 +1,30 @@
 <div class="app-container">
   <header>
-    <h1>SPA Header</h1>
+    <p-menubar>
+      <ng-template #start>
+        <h1 class="text-3xl font-semibold">Kidopi - {{latestMessage}}</h1>
+      </ng-template>
+      <ng-template #end>
+        <a href="https://www.linkedin.com/in/grvela" class="mr-3" target="_blank">
+            <i class="pi pi-linkedin" style="font-size: 2rem"></i>
+        </a>
+        <a href="https://github.com/grvela" class="mr-3" target="_blank">
+            <i class="pi pi-github" style="font-size: 2rem"></i>
+        </a>
+      </ng-template>
+    </p-menubar>
   </header>
-  <main>
-    <app-select (countryChange)="onCountryChange($event)"></app-select>
-    <app-covid-data [country]="country"></app-covid-data>
+
+  <main class="content">
+    <div class="container">
+      <p-card header="About Covid">
+        <p class="m-0">
+          COVID-19, caused by the SARS-CoV-2 virus, had a profound global impact since its emergence in late 2019. The pandemic resulted in millions of deaths and severely affected economies, leading to recessions in many countries, rising unemployment, and significant shifts in the job market. Global healthcare systems were overwhelmed, with many countries struggling to provide treatments and vaccines quickly. Additionally, social distancing and border closures altered social, educational, and cultural dynamics, accelerating digital transformations and changing the way people interact, work, and live. The pandemic also highlighted social and economic inequalities, with vulnerable groups disproportionately affected.
+        </p>
+      </p-card>
+      <div class="title"><h1 class="text-xl font-semibold text-slate-600">Dashboard</h1></div>
+      <app-select (countryChange)="onCountryChange($event)"></app-select>
+      <app-covid-data [country]="country"></app-covid-data>
+    </div>
   </main>  
-  <footer>
-    <p>&copy; 2025 - My SPA Footer</p>
-  </footer>
 </div>
-<router-outlet />

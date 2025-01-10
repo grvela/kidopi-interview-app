@@ -14,7 +14,9 @@ import { FormsModule } from '@angular/forms';
 export class SelectComponent {
   countries: CountryDTO[] = [];
   
-  selectedCountry: CountryDTO = {} as CountryDTO;
+  selectedCountry: CountryDTO = {
+    name: "Brazil"
+  } as CountryDTO;
   countryChange = output<CountryDTO>();
 
   constructor(private covidApiService: CovidApiService){

@@ -6,7 +6,7 @@ export interface CountryDTO {
 export interface CovidInfoDTO{
     id: number;
     country: string;
-    state: string;
-    confirmed_cases: number;
-    confirmed_deaths: number;
+    province: string;
+    confirmed: number;
+    deaths: number;
 }

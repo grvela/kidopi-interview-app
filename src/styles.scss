@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "primeicons/primeicons.css";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para telas menores que 1024px */
+@media (max-width: 1023px) {
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    app-root > * {
+      display: none;
+    }
+  
+    body::before {
+      content: "Working to mobile!";
+    }
+  }
+  

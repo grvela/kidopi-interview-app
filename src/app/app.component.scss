@@ -1,8 +1,21 @@
-  
-
 .app-container {
-    margin: 0px;
+    padding-bottom: 150px;
+}
+
+.content{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    align-items: center;
+    padding-top: 2%;
 }
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.title{
+}
+
